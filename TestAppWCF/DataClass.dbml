@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="InterviewDatabase" Class="DataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=hulkshark\sqlexpress;Initial Catalog=InterviewDatabase;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="InterviewDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GameTable" Member="GameTables">
+    <Type Name="GameTable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PlayerA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PlayerB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
